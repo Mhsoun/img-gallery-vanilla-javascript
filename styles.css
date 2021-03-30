@@ -1,0 +1,75 @@
+/*
+
+color palette: https://coolors.co/3d5a80-98c1d9-e0fbfc-ee6c4d-293241
+  Bdazzald Blue: rgb(61, 90, 128)
+  Pale Cerulean: rgb(152, 193, 217)
+  Light Cyan: rgb(224, 251, 252)
+  Burnt Sienna: rgb(238, 108, 77)
+  Gunmetal: rgb(41, 50, 65)
+*/
+
+body{
+  background-color: #e0fbfc;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #3d5a80;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color:#293241;
+    border: 1px solid #ee6c4d;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #e0fbfc;
+  }
+  .grid-item p {
+    padding:0;
+    margin: 0;
+  }
+
+  .imgIcon {
+    width: 90%;
+  }
+
+  #imgPopup {
+    background-color: rgb(41,50,65,0.6);
+    border: 1px solid rgb(152, 193, 217);
+    border-radius: 10px;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 90%;
+    margin: 100px 10px 10px;
+    padding: 10px;
+    z-index: 1;
+    overflow: auto;
+    visibility: hidden;
+  }
+
+  #showImg{
+    width: 100%;
+  }
+
+  .close {
+    background-color: rgb(152, 193, 217,0.3);
+    color:rgb(238, 108, 77);
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+    border-radius: 25%;
+
+  }
+  .close:hover{
+    background-color: rgb(238, 108, 77);
+    color:rgb(152, 193, 217);
+    border-radius: 25%;
+  }
+
+  #imgTitle {
+    text-align: center;
+  }
